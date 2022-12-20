@@ -37,7 +37,7 @@
                                 </BreezeNavLink>
 
                                 <BreezeNavLink  v-if="$page.props.user.permissions.includes('user')" :href="route('users')" :active="route().current('users')">
-                                    users
+                                    User
                                 </BreezeNavLink>
                                 <BreezeNavLink v-if="$page.props.user.permissions.includes('role')" :href="route('roles')" :active="route().current('roles')">
                                     Role
@@ -102,7 +102,7 @@
                         </BreezeResponsiveNavLink>
 
                         <BreezeResponsiveNavLink v-if="$page.props.user.permissions.includes('user')" :href="route('users')" :active="route().current('users')">
-                            users
+                            User
                         </BreezeResponsiveNavLink>
                         <BreezeResponsiveNavLink v-if="$page.props.user.permissions.includes('role')" :href="route('roles')" :active="route().current('roles')">
                             Role
